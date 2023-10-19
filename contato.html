@@ -34,12 +34,12 @@
     <form action="agrad.html" class="bg-light" style="padding: 10%; ">
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <label for="inputEmail4">Email*</label>
+          <input name="email" type="email" class="form-control" required id="inputEmail4" placeholder="Email">
         </div>
         <div class="form-group col-md-6">
-          <label for="inputEmail4">Nome</label> 
-          <input type="text" name="nome" class="form-control" id="inputEmail4" placeholder="Seu nome">
+          <label >Nome*</label> 
+          <input type="text" name="nome" class="form-control" required placeholder="Seu nome">
         </div>
       </div>
       <div class="form-row">
@@ -84,6 +84,12 @@
         <div class="form-group col-md-2">
           <label for="inputCEP">CEP</label>
           <input type="number" class="form-control" id="inputCEP">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label>Mensagem</label>
+          <textarea name="textarea" cols="30" rows="10" placeholder="Digite sua Mensagem" class="form-control" style="padding: 1%; resize: none;"></textarea>
         </div>
       </div>
       <button type="submit" id="botao" class="btn btn-primary">Enviar</button>
